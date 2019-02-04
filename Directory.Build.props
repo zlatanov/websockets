@@ -1,0 +1,18 @@
+<Project>
+    <PropertyGroup>
+        <NoWarn>$(NoWarn);1591</NoWarn>
+
+        <Authors>Ivan Zlatanov</Authors>
+        <LangVersion>latest</LangVersion>
+
+        <GenerateDocumentationFile Condition="$(Configuration) == Release">true</GenerateDocumentationFile>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+
+        <!--Deterministic Build (tm)-->
+        <Deterministic>true</Deterministic>
+        
+        <!--Embedded Debug Symbols-->
+        <DebugType Condition="$(Configuration) == Release">embedded</DebugType>
+        <DebugSymbols>True</DebugSymbols>
+    </PropertyGroup>
+</Project>

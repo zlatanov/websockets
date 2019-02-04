@@ -1,0 +1,13 @@
+[Oo]bj/
+[Bb]in/
+/pkg/
+/build/
+/tools/
+node_modules/
+wwwroot/lib/
+.vs/
+*.user
+*.suo
+*.cache
+launchSettings.json
+BenchmarkDotNet.Artifacts/
